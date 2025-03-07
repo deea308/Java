@@ -1,0 +1,6 @@
+StrenghtMachine{motion_lvl= 14, muscle_group= core serial_number=3, regular_maintenance=true, price=800.0}}
+StrenghtMachine{motion_lvl= 34, muscle_group= arms serial_number=1, regular_maintenance=true, price=600.0}}
+StrenghtMachine{motion_lvl= 7, muscle_group= arms serial_number=4, regular_maintenance=true, price=600.0}}
+CardioMachine{resistance=1serial_number=4, regular_maintenance=true, price=500.0}}
+CardioMachine{resistance=34serial_number=1, regular_maintenance=true, price=200.0}}
+CardioMachine{resistance=67serial_number=3, regular_maintenance=true, price=200.0}}
