@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cc82cc" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox spacing="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <!-- Title -->
+        <Label alignment="CENTER" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: darkpurple;" text="Travel list" />
+        <VBox spacing="10.0">
+            <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: darkpurple;" text="Available Travels" />
+            <ListView fx:id="travelListView" prefHeight="200.0" style="-fx-background-color: lavender;                                  -fx-border-color: darkpurple;                                  -fx-border-width: 1px;" />
+        </VBox>
+            <HBox alignment="CENTER" spacing="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+    <!--            <Label style="-fx-text-fill: purple;" text="Source City:" />-->
+                <ComboBox fx:id="continentComboBox" onAction="#setContinentComboBox" prefWidth="150.0" style="-fx-border-color: purple; -fx-border-width: 1px;" />
+                <Label text="Search:" />
+                <TextField fx:id="searchTextField" onKeyReleased="#handleFilterTravel" promptText="Enter continent description" />
+            </HBox>
+        <!-- Update Section -->
+        <VBox fx:id="updateBox">
+            <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: darkpurple;" text="Update Description" />
+            <TextField fx:id="descriptionTextField" prefHeight="26.0" prefWidth="40.0" promptText="Enter new description..." />
+            <Button fx:id="updateButton" onAction="#handleUpdateButtonAction" text="Update" />
+            <Label text="Search after places/s:"/>
+            <TextField fx:id="searchPlacesTextField" promptText="Enter places" onKeyReleased="#handleSearchPlaces" />
+        </VBox>
+    </VBox>
+</AnchorPane>
